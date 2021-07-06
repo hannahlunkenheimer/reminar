@@ -1,0 +1,24 @@
+---
+title: "Reminar sesh"
+author: "Hannah Lunkenheimer"
+date: "7/6/2021"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r what}
+library(tidyverse)
+ggplot(msleep, aes(x = brainwt, y = bodywt, color = conservation)) + geom_point()
+```
+
+
+
+
